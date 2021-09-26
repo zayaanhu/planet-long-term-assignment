@@ -1,0 +1,65 @@
+/**
+ * Making a planet class for a java longterm project
+ *
+ * @author Zayaan Hussain
+ * @version .001
+ */
+
+public class Planet 
+{
+    private String colorOfPlanet;
+    private boolean hasAtmosphere;
+    private double planetRadius;
+    private String leaderName;
+    private int planetPopulation;
+
+    /**
+    * This is a default empty constuctor for the 
+    * Planet Class (makes a Planet)
+    */
+    public Planet () {
+
+    }
+
+    /**
+     * Custom constuctor that would represent a fully fuctioning Planet
+     * which is in its middle lifespan
+     */
+
+    public Planet (String colorOfPlanet, boolean hasAtmosphere, double planetRadius, String leaderName, int planetPopulation) {
+        this.colorOfPlanet = colorOfPlanet;
+        this.hasAtmosphere = hasAtmosphere;
+        this.planetRadius = planetRadius;
+        this.leaderName = leaderName;
+        this.planetPopulation = planetPopulation;
+    }
+
+    /**
+     * simple accesser to return the planets name
+     * @return planetColor 
+     */
+
+    public String getColorOfPlanet () {
+        return colorOfPlanet;
+    }
+
+    /**
+     * returns the planet population
+     * @return planetPopulation
+     */
+
+     public int getPlanetPopulation () {
+         return planetPopulation;
+     }
+
+     /**
+      * this is going to be the method which will return the 
+      * volume of the planet.
+      */
+
+      public double getPlanetVolume() {
+          return planetRadius * planetRadius * planetRadius * 3.1415 * 4/3;
+      }
+      
+
+}
