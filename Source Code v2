@@ -2,7 +2,7 @@
  * Making a planet class for a java longterm project
  *
  * @author Zayaan Hussain
- * @version .001
+ * @version .004
  */
 
 public class Planet 
@@ -23,7 +23,7 @@ public class Planet
 
     /**
      * Custom constuctor that would represent a fully fuctioning Planet
-     * which is in its middle lifespan
+     * which is in its middle lifespan, or mostly any type of lifespan
      */
 
     public Planet (String colorOfPlanet, boolean hasAtmosphere, double planetRadius, String leaderName, int planetPopulation) {
@@ -59,7 +59,44 @@ public class Planet
 
       public double getPlanetVolume() {
           return planetRadius * planetRadius * planetRadius * 3.1415 * 4/3;
-      }
-      
+    }
+
+
+      /**
+       * Mutator for the leaderName which will be able to change it. 
+       * @param newLeaderName
+       */
+
+       public void newLeaderName(String newLeaderName) {
+           leaderName = newLeaderName;
+    }
+
+       /**
+     * mutator for the planetColor, with this we will be able to change the value of the variable
+        @param  newPlanetColor
+        */
+        
+        public void setColorOfPlanet (String newColorOfPlanet) {
+            colorOfPlanet = newColorOfPlanet;
+    }
+
+    /**
+     * This method allows me to pull the current name of the leader of the 
+     * planet. 
+     */
+    
+    public String getLeaderName () {
+        return leaderName;
+    }
+
+    /**
+     * this mutator will allow me to change the status of if
+     * the planet has an atmosphere or not. 
+     * @param newHasAtmosphere
+     */
+
+     public void setHasAtmosphere (boolean newHasAtmosphere) {
+        hasAtmosphere = newHasAtmosphere;
+    }
 
 }
