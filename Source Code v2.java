@@ -2,7 +2,7 @@
  * Making a planet class for a java longterm project
  *
  * @author Zayaan Hussain
- * @version .010
+ * @version .007
  */
 
 public class Planet 
@@ -73,7 +73,7 @@ public class Planet
     }
 
        /**
-     * mutator for the planetColor, with this we will be able to change the value of the variable
+        * * mutator for the planetColor, with this we will be able to change the value of the variable
         @param  newPlanetColor
         */
         
