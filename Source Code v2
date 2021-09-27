@@ -2,7 +2,7 @@
  * Making a planet class for a java longterm project
  *
  * @author Zayaan Hussain
- * @version .004
+ * @version .005
  */
 
 public class Planet 
@@ -55,6 +55,7 @@ public class Planet
      /**
       * this is going to be the method which will return the 
       * volume of the planet.
+      * Accessor
       */
 
       public double getPlanetVolume() {
@@ -84,7 +85,7 @@ public class Planet
      * This method allows me to pull the current name of the leader of the 
      * planet. 
      */
-    
+
     public String getLeaderName () {
         return leaderName;
     }
@@ -99,4 +100,44 @@ public class Planet
         hasAtmosphere = newHasAtmosphere;
     }
 
+    /**
+     * basic mutator which will allow me to change the population
+     * amount.
+     * 
+     * @return newPlanetPopulation
+     */
+
+     public void newPlanetPopulation (int newPlanetPopulation) {
+         planetPopulation = newPlanetPopulation;
+     } 
+
+    /**
+     * accessor for the variable planetRadius
+     * This will return the value of planetRadius
+     * @return getPlanetRadius 
+     */
+
+     public double getPlanetRadius () {
+         return planetRadius;
+     }
+     
+     /** 
+      * toString
+      *
+      *@return string to represent this planet
+      */
+      public String toString() {
+        String output = "";
+
+        output = output + "Planet:" + "\n";
+        output = output + "Color of Planet: " + colorOfPlanet + "\n";
+        output = output + "Has atmosphere?: " + hasAtmosphere + "\n";
+        output = output + "Radius of Planet: " + planetRadius + " x 10^3 " + "\n";
+        output = output + "Name of the Planet Leader: " + leaderName + "\n";
+        output = output + "Population of the Planet: " + planetPopulation + " people" + "\n";
+        
+        return output;
+    
+    }
+     
 }
