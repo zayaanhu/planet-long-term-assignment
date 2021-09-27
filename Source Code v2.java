@@ -2,7 +2,7 @@
  * Making a planet class for a java longterm project
  *
  * @author Zayaan Hussain
- * @version .005
+ * @version .010
  */
 
 public class Planet 
