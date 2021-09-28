@@ -2,7 +2,7 @@
  * Making a planet class for a java longterm project
  *
  * @author Zayaan Hussain
- * @version .007
+ * @version .008
  */
 
 public class Planet 
@@ -81,6 +81,16 @@ public class Planet
             colorOfPlanet = newColorOfPlanet;
     }
 
+    /** 
+     * This will allow me to chage the value of the planet Radius
+     * 
+     * @param newPlanetRadius
+     */
+
+     public void newPlanetRadius(double newPlanetRadius) {
+         planetRadius = newPlanetRadius;
+     }
+
     /**
      * This method allows me to pull the current name of the leader of the 
      * planet. 
@@ -119,7 +129,7 @@ public class Planet
 
      public double getPlanetRadius () {
          return planetRadius;
-     }
+    }
      
      /** 
       * toString
