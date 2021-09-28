@@ -2,7 +2,7 @@
  * Making a planet class for a java long term project
  *
  * @author Zayaan Hussain
- * @version .009
+ * @version .010
  */
 
 public class Planet
@@ -147,6 +147,16 @@ public class Planet
 
     public void setPlanetName(String newPlanetName) {
         planetName = newPlanetName;
+    }
+
+     /**
+      * This will add 1 to the planetPopulation 
+      * this will reperesent the population growing
+      */
+      public void growPlanetPopulation() {
+        //this.planetPopulation = this.trunkRadiusInInches + 1;
+        // this.trunkRadius;
+        planetPopulation++;
     }
 
     /**
