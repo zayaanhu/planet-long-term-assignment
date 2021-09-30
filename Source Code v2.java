@@ -2,7 +2,7 @@
  * Making a planet class for a java long term project
  *
  * @author Zayaan Hussain
- * @version .009
+ * @version .010
  */
 
 public class Planet
@@ -10,9 +10,10 @@ public class Planet
     private String colorOfPlanet;
     private boolean hasAtmosphere;
     private double planetRadius;
-    private String leaderName;
+    private Alien planetLeader;
     private int planetPopulation;
     private String planetName;
+    
     /**
      * This is a default empty constructor for the
      * Planet Class (makes a Planet)
@@ -26,11 +27,11 @@ public class Planet
      * which is in its middle lifespan, or mostly any type of lifespan
      */
 
-    public Planet (String colorOfPlanet, boolean hasAtmosphere, double planetRadius, String leaderName, int planetPopulation, String planetName) {
+    public Planet (String colorOfPlanet, boolean hasAtmosphere, double planetRadius, Alien planetLeader, int planetPopulation, String planetName) {
         this.colorOfPlanet = colorOfPlanet;
         this.hasAtmosphere = hasAtmosphere;
         this.planetRadius = planetRadius;
-        this.leaderName = leaderName;
+        this.planetLeader = planetLeader; 
         this.planetPopulation = planetPopulation;
         this.planetName = planetName;
     }
@@ -73,12 +74,12 @@ public class Planet
     }
 
     /**
-     * Mutator for the leaderName which will be able to change it.
+     * Mutator for the planetLeader which will be able to change it.
      * @param newLeaderName
      */
 
-    public void newLeaderName(String newLeaderName) {
-        leaderName = newLeaderName;
+    public void newLeaderName(Alien newLeaderName) {
+        planetLeader = newLeaderName;
     }
 
     /**
@@ -105,8 +106,8 @@ public class Planet
      * planet.
      */
 
-    public String getLeaderName () {
-        return leaderName;
+    public Alien getLeaderName () {
+        return planetLeader;
     }
 
     /**
@@ -170,7 +171,7 @@ public class Planet
         output = output + "Color of Planet: " + colorOfPlanet + "\n";
         output = output + "Has atmosphere?: " + hasAtmosphere + "\n";
         output = output + "Radius of Planet: " + planetRadius + " x 10^3 " + "\n";
-        output = output + "Name of the Planet Leader: " + leaderName + "\n";
+        output = output + "Name of the Planet Leader: " + planetLeader + "\n";
         output = output + "Population of the Planet: " + planetPopulation + " people" + "\n";
         output = output + "Name of Planet: " + planetName + "\n";
 
