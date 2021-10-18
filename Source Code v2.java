@@ -1,7 +1,7 @@
 /**
  * Making a planet class for a java long term project
  *
- * @author Zayaan Hussain
+ * @author zayaanhu
  * @version .010
  */
 
